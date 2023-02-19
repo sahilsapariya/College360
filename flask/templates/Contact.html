@@ -5,13 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/contact.css">
     <title>Contact</title>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="image-container"></div>
 
+        <div class="contact-form contact">
+            <h2>Contact Me</h2>
+
+            <form action="https://formspree.io/f/xknedypv" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" required><br>
+                
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
+                <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone number" required><br>
+                <textarea type="text" rows="4" name="message" id="message" placeholder="Message..."
+                    required></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="image-container"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
@@ -29,7 +46,7 @@
         viewer = new PANOLENS.Viewer({
             container: imageContainer,
             autoRotate: true,
-            autoRotateSpeed: 0.8,
+            // autoRotateSpeed: 1,
             controlBar: false
         });
 
