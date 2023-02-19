@@ -1,4 +1,4 @@
-let panorama_arrow, panorama_canal_gate, panorama_cf_middle, panorama_cf_outside, panorama_main_gate, panorama_front_canteen, panorama_front_library, viewer;
+let panorama_arrow, panorama_canal_gate, panorama_cf_middle, panorama_cf_outside, panorama_main_gate, viewer;
 const imageContainer = document.querySelector(".image-container");
 
 const path = "static/icons/arrow-upward";
