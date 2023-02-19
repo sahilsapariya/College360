@@ -19,10 +19,6 @@ panorama_canal_gate = new PANOLENS.ImagePanorama("static/images/dental_campus_en
 
 
 // panorama.link(panorama2, new THREE.Vector3( -1007.50, 404.88, -5000.00))
-panorama2.link(panorama3, new THREE.Vector3( 50.50, -400.88, -5000.00))
-panorama3.link(panorama4, new THREE.Vector3( 2000.50, -400.88, -5000.00))
-panorama3.link(panorama5, new THREE.Vector3( 50.50, -400.88, -5000.00))
-panorama4.link(panorama3, new THREE.Vector3( 50.50, -400.88, -5000.00))
 panorama_arrow.link(panorama_main_gate, new THREE.Vector3( -1007.50, 404.88, -5000.00))
 panorama_main_gate.link(panorama_cf_outside, new THREE.Vector3( 10000.50, -1000, -500))
 panorama_cf_outside.link(panorama_cf_middle, new THREE.Vector3( 6000.50, -1200, 1500))
