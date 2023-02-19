@@ -7,14 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>360 degree View</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-container">
-        
-        <h1>Hi, Welcome</h1>
-        <a class="btn" href="/tour">Explore College</a>
+    <nav>
+        <div class="logo"><img src="static/images/logo.png" alt=""></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/tour">Tour</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-container" style="top: 0;">
+        <div class="container">
+            <h1>welcome</h1>
+            <a class="btn" href="/tour">Explore College</a>
+        </div>
 
+        <!-- <a href="/home" style="z-index: 100; position: absolute
+        ; top: 5%;">back to home page</a> -->
         <div class="image-container"></div>
     </div>
 
@@ -23,7 +59,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="{{ url_for('static', filename='js/panolens.min.js') }}"></script>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        let panorama, viewer;
+
+        const imageContainer = document.querySelector(".image-container")
+        panorama = new PANOLENS.ImagePanorama("static/images/cf_main.jpg")
+
+        viewer = new PANOLENS.Viewer({
+            container: imageContainer,
+            autoRotate: true,
+            controlBar: false
+        });
+
+        viewer.add(panorama)
+
+    </script>
+
 </body>
 
 </html>

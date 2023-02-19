@@ -3,7 +3,6 @@ const imageContainer = document.querySelector(".image-container");
 
 panorama = new PANOLENS.ImagePanorama("static/images/miami.jpeg")
 
-
 viewer = new PANOLENS.Viewer({
   container: imageContainer,
   autoRotate: true,
