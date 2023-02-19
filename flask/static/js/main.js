@@ -18,9 +18,10 @@ panorama5 = new PANOLENS.ImagePanorama("static/images/dental_campus_entrance.jpg
 
 
 panorama.link(panorama2, new THREE.Vector3( -1007.50, 404.88, -5000.00))
-panorama2.link(panorama3, new THREE.Vector3( 50.50, -400.88, -5000.00))
-panorama3.link(panorama4, new THREE.Vector3( 2000.50, -400.88, -5000.00))
+panorama2.link(panorama3, new THREE.Vector3( 10000.50, -1000, -500))
+panorama3.link(panorama4, new THREE.Vector3( 6000.50, -1000, 2000))
 panorama3.link(panorama5, new THREE.Vector3( 50.50, -400.88, -5000.00))
+panorama3.link(panorama2, new THREE.Vector3( -700.50, -700.88, 5000.00))
 panorama4.link(panorama3, new THREE.Vector3( 50.50, -400.88, -5000.00))
 
 
