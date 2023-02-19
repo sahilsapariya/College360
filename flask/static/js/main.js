@@ -1,4 +1,4 @@
-let panorama, panorama2, panorama3, viewer;
+let panorama, panorama2, panorama3, viewer, panorama4, panorama5, image;
 const imageContainer = document.querySelector(".image-container");
 
 const path = "static/icons/arrow-upward";
@@ -17,7 +17,7 @@ panorama4 = new PANOLENS.ImagePanorama("static/images/cf_middle.jpg")
 panorama5 = new PANOLENS.ImagePanorama("static/images/dental_campus_entrance.jpg")
 
 
-panorama.link(panorama2, new THREE.Vector3( -1007.50, 404.88, -5000.00))
+// panorama.link(panorama2, new THREE.Vector3( -1007.50, 404.88, -5000.00))
 panorama2.link(panorama3, new THREE.Vector3( 50.50, -400.88, -5000.00))
 panorama3.link(panorama4, new THREE.Vector3( 2000.50, -400.88, -5000.00))
 panorama3.link(panorama5, new THREE.Vector3( 50.50, -400.88, -5000.00))
