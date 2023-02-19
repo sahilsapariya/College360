@@ -16,6 +16,10 @@ def Tour():
 def About():
     return render_template('About.html')
 
+@app.route('/contact')
+def Contact():
+    return render_template('Contact.html')
+
 
 
 if __name__ == "__main__":
