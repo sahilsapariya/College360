@@ -17,7 +17,6 @@ panorama_cf_outside = new PANOLENS.ImagePanorama("static/images/cf_outside.jpg")
 panorama_cf_middle = new PANOLENS.ImagePanorama("static/images/cf_middle.jpg")
 panorama_canal_gate = new PANOLENS.ImagePanorama("static/images/dental_campus_entrance.jpg")
 
-
 // panorama.link(panorama2, new THREE.Vector3( -1007.50, 404.88, -5000.00))
 panorama_arrow.link(panorama_main_gate, new THREE.Vector3( -1007.50, 404.88, -5000.00))
 panorama_main_gate.link(panorama_cf_outside, new THREE.Vector3( 10000.50, -1000, -500))
